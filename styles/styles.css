@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+body{
+margin: 0;
+padding: 0;
+width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+background-color: hsl(234, 17%, 12%);
+background-image: 
+url('../images/pattern-hills.svg') ,
+url('../images/bg-stars.svg');
+background-repeat: no-repeat,
+no-repeat;
+background-position: bottom center,
+ center;
+background-size: contain,
+cover;
+font-family: 'Red Hat Text', sans-serif;
+text-transform: uppercase;
+}
+h1{
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 1rem;
+}
+p{
+    color:hsl(237, 18%, 59%)
+}
+main{
+    display: flex;
+    width: 1200px;
+    justify-content: space-around;
+}
+div.digits-container{
+    width: 250px;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.digits-container p:first-of-type{
+    display: block;
+    width: 200px;
+    margin: 0;
+    padding: 2rem 0;
+    background-color: hsl(236, 21%, 26%);
+    color:  hsl(345, 95%, 68%);
+    border-radius: 15px;
+    font-size: 6rem;
+}
+.digits-container p:nth-of-type(2){
+    letter-spacing: .6rem;
+    font-weight: 900;
+}
+footer{
+    margin-top: 250px;
+}
+ul{
+    list-style: none;
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+footer img:hover{
+    filter: invert(1) sepia(.8) saturate(74) hue-rotate(318deg) brightness(95%) contrast(65%);
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 350px) and (max-width: 767px){ 
+    body{
+    background-position: bottom center,
+    center;
+    background-size: 100% 20%,
+    cover;
+    text-align: center;
+    }
+    main{
+        width:350px;
+    }
+    h1{
+        font-size: 1.5rem;
+        letter-spacing: .2rem;
+    }
+    div.digits-container{
+        width: 80px;
+    }
+    .digits-container p:first-of-type{
+        width: 60px;
+        padding: 1rem 0;
+        font-size: 1.5rem;
+    }
+    .digits-container p:nth-of-type(2){
+        font-size: .5rem;
+        letter-spacing: .3rem;
+
+    }
+}
